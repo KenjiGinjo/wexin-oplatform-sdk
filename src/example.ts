@@ -74,6 +74,7 @@ const { auditid } = client.miniProgramManagement.codeManagement.submitAudit({
     }
 })
 
+// 然后查询审核状态
 const auditStatus = client.miniProgramManagement.codeManagement.getAuditStatus({
     access_token: authorizer_access_token,
     auditid: auditid
