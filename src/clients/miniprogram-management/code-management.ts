@@ -62,4 +62,43 @@ export class CodeManagement {
             auditid: 123456
         }
     }
+
+    /**
+     * 查询审核单状态
+     * https://developers.weixin.qq.com/doc/oplatform/openApi/OpenApiDoc/miniprogram-management/code-management/getAuditStatus.html
+     */
+    public getAuditStatus(input: {
+        access_token: string,
+        auditid: number
+
+    }) {
+
+        // POST https://api.weixin.qq.com/wxa/get_auditstatus?access_token=ACCESS_TOKEN 
+
+        const respons = {
+            "errcode": 0,
+            "errmsg": "ok",
+            "status": 1,
+            "reason": "账号信息不合规范",
+            "screenshot": "xxx|yyy|zzz"
+        }
+        return respons
+    }
+
+    /**
+     * 发布已通过审核的小程序
+     * https://developers.weixin.qq.com/doc/oplatform/openApi/OpenApiDoc/miniprogram-management/code-management/release.html
+     */
+    public release(input: {
+        access_token: string
+
+    }) {
+
+        // POST https://api.weixin.qq.com/wxa/release?access_token=ACCESS_TOKEN 
+
+        return {
+            "errcode": 0,
+            "errmsg": "ok"
+        }
+    }
 }
