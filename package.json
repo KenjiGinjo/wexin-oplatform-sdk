@@ -1,4 +1,8 @@
 {
   "name": "weixin-oplatform-sdk",
-  "scripts": {}
+  "scripts": {},
+  "dependencies": {
+    "@alicloud/dingtalk": "^2.1.20",
+    "ky": "^1.2.4"
+  }
 }
